@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar Economic Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            max-width: 1000px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        h1 { 
+            text-align: center;
+            color: #333;
+            margin-bottom: 1em;
+        }
+        .controls { 
+            display: flex; 
+            gap: 10px; 
+            justify-content: center; 
+            align-items: center; 
+            margin-bottom: 30px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        select, button { 
+            font-size: 1rem; 
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        select {
+            min-width: 300px;
+        }
+        button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #357abd;
+        }
+        #graph-container { 
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+        .loader { 
+            font-size: 1.2rem; 
+            color: #666;
+            text-align: center;
+        }
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Madagascar Economic Indicators</h1>
+
+    <div class="controls">
+        <label for="column-select">Choose an indicator:</label>
+        <select id="column-select">
+            <option>Loading indicators...</option>
+        </select>
+        <button onclick="generateGraph()">Generate Graph</button>
+    </div>
+
+    <div id="graph-container">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>

@@ -50,20 +50,40 @@ async function generateGraph() {
         return;
     }
 
-    // Show a loading message
-    graphContainer.innerHTML = '<p class="loader">Generating your graph...</p>';
-
     try {
+        // Show a loading message without removing the canvas
+        const canvas = document.getElementById('chart');
+        if (!canvas) {
+            graphContainer.innerHTML = '<canvas id="chart"></canvas>';
+        }
+        
+        // Show loading message separately
+        const loadingMsg = document.createElement('p');
+        loadingMsg.className = 'loader';
+        loadingMsg.textContent = 'Generating your graph...';
+        loadingMsg.style.position = 'absolute';
+        loadingMsg.style.top = '50%';
+        loadingMsg.style.left = '50%';
+        loadingMsg.style.transform = 'translate(-50%, -50%)';
+        loadingMsg.style.zIndex = '1000';
+        graphContainer.style.position = 'relative';
+        graphContainer.appendChild(loadingMsg);
+
         const response = await fetch(`${API_BASE_URL}/data?column=${encodeURIComponent(selectedColumn)}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
 
-        // Create the chart using Chart.js
+        // Remove loading message
+        if (loadingMsg.parentNode) {
+            loadingMsg.parentNode.removeChild(loadingMsg);
+        }
+
+        
         const ctx = document.getElementById('chart').getContext('2d');
         
-        // Destroy existing chart if it exists
+    
         if (window.myChart instanceof Chart) {
             window.myChart.destroy();
         }
@@ -108,7 +128,20 @@ async function generateGraph() {
         });
 
     } catch (error) {
-        graphContainer.innerHTML = '<p>An error occurred while generating the graph.</p>';
+        // Remove loading message if it exists
+        const loadingMsg = graphContainer.querySelector('.loader');
+        if (loadingMsg) {
+            loadingMsg.remove();
+        }
+        
+        // Show error without removing canvas
+        const errorMsg = document.createElement('p');
+        errorMsg.textContent = 'An error occurred while generating the graph.';
+        errorMsg.style.color = 'red';
+        errorMsg.style.textAlign = 'center';
+        errorMsg.style.marginTop = '20px';
+        graphContainer.appendChild(errorMsg);
+        
         console.error('Error fetching graph:', error);
     }
 }

@@ -1,0 +1,26 @@
+Country,Code,ContinentCode,Year,Economic growth: the rate of change of real GDP,GDP per capita Purchasing Power Parity,Inflation: percent change in the Consumer Price Index,Internet users percent of population,Energy use per capita,Electricity production capacity million kilowatts,Electricity production billion kilowatthours,Electricity consumption billion kilowatthours,Electricity imports billion kilowatthours,Poverty percent of population,Public spending on education percent of GDP,Public spending on education percent of public spending,Female literacy rate ages 15-24,Male literacy rate ages 15-24,Happiness Index 0 (unhappy) - 10 (happy)
+Madagascar,MDG,AF,2000,4.46,1701,11.9,0.2,255.71,0.23,0.85,0.8,0,,2.44,15.89,68,73,
+Madagascar,MDG,AF,2001,5.98,1749,7.9,0.22,254.17,0.23,0.88,0.81,0,70.8,2.71,17.68,,,
+Madagascar,MDG,AF,2002,-12.41,1486,16.5,0.34,235.9,0.23,0.86,0.81,0,,2.23,17.94,,,
+Madagascar,MDG,AF,2003,9.78,1585,-1.7,0.42,247.05,0.25,0.97,0.91,0,,2.61,15.76,,,
+Madagascar,MDG,AF,2004,5.26,1620,14,0.52,250.25,0.28,1.06,1,0,,2.81,12.96,,,
+Madagascar,MDG,AF,2005,4.76,1648,18.4,0.57,250.78,0.32,1.06,0.99,0,73.2,3.31,18.03,56,59,
+Madagascar,MDG,AF,2006,5.4,1687,10.8,0.61,250.83,0.36,1.07,1.01,0,,2.83,15.32,,,
+Madagascar,MDG,AF,2007,5.71,1732,10.3,0.65,254.44,0.37,1.12,1.05,0,,2.9,18.04,,,
+Madagascar,MDG,AF,2008,6.71,1794,9.3,1.65,259.2,0.43,1.18,1.13,0,,2.55,16.26,,,
+Madagascar,MDG,AF,2009,-3.98,1673,9,1.63,253.63,0.42,1.19,1.15,0,,2.83,22.59,63.97,65.91,
+Madagascar,MDG,AF,2010,0.62,1635,9.2,1.7,255.49,0.54,1.31,1.25,0,71.7,2.59,20.4,,,
+Madagascar,MDG,AF,2011,1.58,1615,9.5,1.9,259.29,0.55,1.47,1.4,0,,3.09,19.78,,,
+Madagascar,MDG,AF,2012,3.01,1618,5.7,2.3,265.24,0.58,1.56,1.47,0,70.7,2.46,22.18,75,78,
+Madagascar,MDG,AF,2013,2.3,1611,5.8,3,268.49,0.58,1.65,1.55,0,,2.41,13.99,,,3.97
+Madagascar,MDG,AF,2014,3.34,1620,6.1,3.7,271.28,0.59,1.71,1.61,0,,2.99,18.97,,,
+Madagascar,MDG,AF,2015,3.13,1628,7.4,4.17,275.43,0.59,1.78,1.68,0,,2.7,16.96,,,3.68
+Madagascar,MDG,AF,2016,3.99,1649,6,4.71,293.32,0.59,1.9,1.79,0,,2.7,19.58,,,3.7
+Madagascar,MDG,AF,2017,3.93,1670,8.6,6.4,299.45,0.72,1.98,1.87,0,,2.7,,,,3.64
+Madagascar,MDG,AF,2018,3.19,1679,8.6,7.75,292.82,0.72,2.37,2.27,0,,3.05,19.82,79,81,3.77
+Madagascar,MDG,AF,2019,4.41,1708,5.6,9.38,313.77,0.6,2.47,2.34,0,,3.01,17.95,,,3.93
+Madagascar,MDG,AF,2020,-7.14,1546,4.2,11.4,301.75,0.65,2.16,2.05,0,,3.25,,,,4.21
+Madagascar,MDG,AF,2021,4.65,1577,5.8,13.7,308.95,0.7,2.52,2.39,0,,3.2,,82.24,82.53,4.34
+Madagascar,MDG,AF,2022,4.16,1603,8.2,18.6,308.67,0.73,2.65,2.51,0,,3.14,,80.66,80.81,4.02
+Madagascar,MDG,AF,2023,4.2,1629,9.9,20.4,,0.76,2.65,2.51,0,,,,,,4.02
+Madagascar,MDG,AF,2024,4.2,1657,,,,,,,,,,,,,4.23

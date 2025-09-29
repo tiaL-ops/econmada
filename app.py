@@ -91,4 +91,10 @@ def graph_data():
         return f"<p>An error occurred: {e}</p>", 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)  # Changed port to 5001
+    # For development
+    app.run(debug=True, port=5001)
+else:
+    # For production
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
